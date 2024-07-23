@@ -1,5 +1,5 @@
 
-# Real Estate Hub
+# Bienes Raices
 
 ## Descripción
 Este es un proyecto de ejemplo para una página de bienes raíces. La estructura del proyecto está organizada utilizando SCSS para los estilos, Gulp para la automatización de tareas y Node.js para la gestión de dependencias.
