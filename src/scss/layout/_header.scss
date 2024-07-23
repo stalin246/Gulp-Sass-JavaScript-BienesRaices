@@ -1,0 +1,43 @@
+// Archivo _header.scss: Estilos específicos para el encabezado del proyecto de Bienes Raíces
+
+// Estilos para la compatibilidad con imágenes en formato WebP
+.no-webp .inicio {
+    background-image: url(../img/header.jpg); // Imagen de fondo en formato JPG para navegadores que no soportan WebP
+}
+
+.webp .inicio {
+    background-image: url(../img/header.webp); // Imagen de fondo en formato WebP para navegadores que soportan WebP
+}
+
+.header {
+    background-color: $grisOscuro; // Color de fondo del encabezado, definido en variables
+    padding: 1rem 0 3rem 0; // Padding: 1rem superior, 0 a los lados, 3rem inferior
+
+    &.inicio {
+        background-position: center center; // Posiciona la imagen de fondo en el centro
+        background-size: cover; // Escala la imagen de fondo para cubrir todo el área
+
+        @include tablet {
+            min-height: 70rem; // Altura mínima del encabezado en dispositivos tablet
+        }
+
+        .contenido-header {
+            @include tablet {
+                min-height: 70rem; // Altura mínima del contenido del encabezado en dispositivos tablet
+            }
+        }
+    }
+}
+
+.contenido-header {
+    display: flex; // Utiliza Flexbox para la disposición de elementos
+    flex-direction: column; // Dirección de los elementos en columna
+    justify-content: space-between; // Espacio entre elementos justificado
+    h1 {
+        text-align: left; // Alineación del texto a la izquierda
+        color: $blanco; // Color del texto del encabezado
+        font-weight: $bold; // Peso de la fuente definido en variables
+        line-height: 2; // Altura de línea para el texto
+        max-width: 60rem; // Ancho máximo del texto del encabezado
+    }
+}

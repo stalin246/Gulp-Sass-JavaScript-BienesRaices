@@ -1,0 +1,31 @@
+// Archivo _contactar.scss: Estilos específicos para la sección de contacto del proyecto de Bienes Raíces
+
+// Estilos para navegadores que no soportan WebP
+.no-webp .imagen-contacto {
+    background-image: url("../img/encuentra.jpg"); // Imagen de fondo en formato JPG
+}
+
+// Estilos para navegadores que soportan WebP
+.webp .imagen-contacto {
+    background-image: url("../img/encuentra.webp"); // Imagen de fondo en formato WebP
+}
+
+.imagen-contacto {
+    background-position: center center; // Posiciona la imagen de fondo en el centro
+    background-size: cover; // Escala la imagen de fondo para cubrir todo el área
+    padding: $separacion * 2 0; // Padding superior e inferior, basado en la variable $separacion
+    display: flex; // Utiliza Flexbox para la disposición de elementos
+    flex-direction: column; // Dirección de los elementos en columna
+    align-items: center; // Alinea los elementos al centro horizontalmente
+
+    h2 {
+        font-size: 4rem; // Tamaño de fuente para el encabezado h2
+        font-weight: $black; // Peso de la fuente del encabezado h2, definido en variables
+        color: $blanco; // Color del texto del encabezado h2
+    }
+    
+    p {
+        font-size: 1.8rem; // Tamaño de fuente para los párrafos
+        color: $blanco; // Color del texto de los párrafos
+    }
+}

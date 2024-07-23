@@ -1,0 +1,13 @@
+// Archivo _botones.scss: Estilos específicos para los botones del proyecto de Bienes Raíces
+.boton-amarillo {
+    @include boton($amarillo, inline-block); // Aplica el mixin 'boton' con el color amarillo y display block
+}
+
+
+.boton-amarillo-block {
+    @include boton($amarillo, block); // Aplica el mixin 'boton' con el color amarillo y display block
+}
+
+.boton-verde {
+    @include boton($verde, inline-block); // Aplica el mixin 'boton' con el color verde y display inline-block
+}

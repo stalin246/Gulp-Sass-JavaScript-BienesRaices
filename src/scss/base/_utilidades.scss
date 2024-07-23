@@ -1,0 +1,17 @@
+// Archivo _utilidades.scss: Contiene clases utilitarias para el proyecto de Bienes Raíces
+
+// Clase para secciones con márgenes estándar
+.seccion {
+    margin-top: calc($separacion / 2); // Margen superior definido por la variable $separacion
+    margin-bottom: calc($separacion / 2); // Margen inferior definido por la variable $separacion
+}
+
+// Clase para centrar el contenido con un ancho máximo
+.contenido-centrado {
+    max-width: 80rem; // Ancho máximo del contenido centrado
+}
+
+.alinear-derecha {
+    display: flex;
+    justify-content: flex-end;
+}

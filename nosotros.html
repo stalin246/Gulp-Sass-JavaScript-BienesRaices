@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta tags esenciales -->
+    <meta charset="UTF-8"> <!-- Codificación de caracteres -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Diseño adaptable para dispositivos móviles -->
+    <title>Bienes raices</title> <!-- Título de la página -->
+
+    <!-- Enlace al archivo CSS principal -->
+    <link rel="stylesheet" href="build/css/app.css">
+</head>
+<body>
+
+    <!-- Encabezado de la página -->
+    <header class="header">
+        <div class="contenedor contenido-header">
+            <div class="barra">
+                <a href="/">
+                    <img src="build/img/logo.svg" alt="logotipo">
+                </a>
+
+                <div class="mobile-menu">
+                    <img src="build/img/barras.svg" alt="icono menu">
+
+                </div>
+
+                <div class="derecha">
+                    <img class="dark-mode-boton" src="build/img/dark-mode.svg" alt="">
+
+                    <nav class="navegacion">
+                        <a href="nosotros.html">Nosotros</a>
+                        <a href="anuncios.html">Anuncios</a>
+                        <a href="blog.html">Blog</a>
+                        <a href="contacto.html">Contacto</a>
+                    </nav>
+
+                </div>
+
+            
+
+
+            </div>
+       
+        </div>
+    </header>
+
+    <!-- Contenido principal de la página -->
+    <main class="contenedor seccion">
+        <h1>Conoce sobre nosotros</h1> <!-- Título de la sección principal -->
+
+        <div class="contenido-nosotros">
+            <!-- Imagen sobre nosotros con diferentes formatos para compatibilidad -->
+            <div class="imagen">
+                <picture>
+                    <source srcset="build/img/nosotros.webp" type="image/webp"> <!-- Imagen en formato WebP -->
+                    <source srcset="build/img/nosotros.jpeg" type="image/jpeg"> <!-- Imagen en formato JPEG -->
+                    <img loading="lazy" src="build/img/nosotros.jpg" alt="Sobre nosotros"> <!-- Imagen de respaldo en formato JPG con lazy loading -->
+                </picture>
+            </div>
+
+            <div class="texto-nosotros">
+                <blockquote>10 años de experiencia</blockquote> <!-- Cita destacada sobre la experiencia -->
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid numquam nesciunt rem aperiam quam dolorum eius fugit expedita adipisci ratione sapiente sunt aut, praesentium, tenetur maxime alias doloremque odio dicta.</p> <!-- Primer párrafo de descripción -->
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet nostrum debitis sed consequatur minima hic vero veritatis repudiandae? Nesciunt porro provident mollitia saepe iste dolore reprehenderit molestiae eveniet fugit consequatur!</p> <!-- Segundo párrafo de descripción -->
+            </div>
+        </div>
+    </main>
+
+    <!-- Sección adicional sobre nosotros -->
+    <section class="contenedor seccion">
+        <h1>Más Sobre Nosotros</h1> <!-- Título de la sección -->
+
+        <div class="iconos-nosotros">
+            <!-- Icono 1 -->
+            <div class="icono">
+                <img src="build/img/icono1.svg" alt="seguridad" loading="lazy"> <!-- Icono de seguridad -->
+                <h3>Seguridad</h3> <!-- Título del icono -->
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus incidunt magnam eos, voluptate voluptatem amet officia est atque nobis, ratione dolores. Rem impedit incidunt quisquam quaerat deleniti debitis provident ducimus.</p> <!-- Descripción del icono -->
+            </div>
+
+            <!-- Icono 2 -->
+            <div class="icono">
+                <img src="build/img/icono2.svg" alt="precio" loading="lazy"> <!-- Icono de precio -->
+                <h3>Precio</h3> <!-- Título del icono -->
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus incidunt magnam eos, voluptate voluptatem amet officia est atque nobis, ratione dolores. Rem impedit incidunt quisquam quaerat deleniti debitis provident ducimus.</p> <!-- Descripción del icono -->
+            </div>
+
+            <!-- Icono 3 -->
+            <div class="icono">
+                <img src="build/img/icono3.svg" alt="tiempo" loading="lazy"> <!-- Icono de tiempo -->
+                <h3>Tiempo</h3> <!-- Título del icono -->
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus incidunt magnam eos, voluptate voluptatem amet officia est atque nobis, ratione dolores. Rem impedit incidunt quisquam quaerat deleniti debitis provident ducimus.</p> <!-- Descripción del icono -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Pie de página de la página -->
+    <footer class="footer seccion">
+        <div class="contenedor contenedor-footer">
+            <!-- Menú de navegación del pie de página -->
+            <nav class="navegacion">
+                <a href="nosotros.html">Nosotros</a> <!-- Enlace a la página de nosotros -->
+                <a href="anuncios.html">Anuncios</a> <!-- Enlace a la página de anuncios -->
+                <a href="blog.html">Blog</a> <!-- Enlace a la página del blog -->
+                <a href="contacto.html">Contacto</a> <!-- Enlace a la página de contacto -->
+            </nav>
+        </div>
+        <p class="copyright">Todos los derechos reservados 2024 &copy</p> <!-- Nota de derechos de autor -->
+    </footer>
+
+    <!-- Enlace al archivo JavaScript principal -->
+    <script src="build/js/bundle.min.js"></script>
+    
+</body>
+</html>

@@ -1,0 +1,85 @@
+// Archivo _navegacion.scss: Estilos específicos para la barra de navegación del proyecto de Bienes Raíces
+.derecha{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @include tablet {
+        align-items: flex-end;
+    }
+    .dark-mode-boton {
+        width: 3rem;
+        margin-top: 3rem;
+        margin-bottom: 2rem;
+        filter: invert(100%);
+        &:hover {
+            cursor: pointer;
+        }
+        @include tablet {
+            margin-top: 0;
+        }
+    }
+}
+
+.barra {
+    display: flex; // Utiliza Flexbox para la disposición de elementos
+    flex-direction: column; // Dirección de los elementos en columna
+    padding-top: 3rem; // Padding superior
+    align-items: center; // Alinea los elementos en el centro horizontalmente
+
+    @include tablet {
+        flex-direction: row; // Dirección de los elementos en fila para dispositivos tablet
+        justify-content: space-between; // Espacio entre elementos justificado
+        align-items: flex-end;
+    }
+}
+
+.navegacion {
+    visibility: hidden; // Inicialmente oculta la navegación
+    transition: visibility .3s ease-in-out, opacity 0.5s linear, height 0.5s linear; // Transiciones para visibilidad y opacidad
+    opacity: 0; // Opacidad inicial
+    height: 0;
+
+    @include tablet {
+        display: flex; // Utiliza Flexbox para la disposición de elementos en dispositivos tablet
+        align-items: center; // Alinea los elementos verticalmente al centro
+        opacity: 1; // Opacidad total en tablet
+        visibility: visible; // Visibilidad total en tablet
+    }
+
+    a {
+        color: $blanco; // Color del texto de los enlaces, definido en variables
+        text-decoration: none; // Elimina el subrayado de los enlaces
+        font-size: 2.2rem; // Tamaño de fuente para los enlaces
+
+        display: block; // Los enlaces se muestran como bloques
+        text-align: center; // El texto de los enlaces está centrado
+
+        @include tablet {
+            margin-right: 2rem; // Margen derecho para separar los enlaces en dispositivos tablet
+            font-size: 1.8rem; // Tamaño de fuente reducido para los enlaces en dispositivos tablet
+
+            &:last-of-type {
+                margin-right: 0; // Elimina el margen derecho del último enlace
+            }
+        }
+    }
+}
+
+// Menú de hamburguesa para dispositivos móviles
+
+.mobile-menu {
+    @include tablet {
+        display: none; // Oculta el menú de hamburguesa en dispositivos tablet
+    }
+    img {
+        width: 5rem; // Ancho de la imagen del menú de hamburguesa
+    }
+}
+
+// Clase para mostrar la navegación en dispositivos móviles
+
+.mostrar {
+    visibility: visible; // Hace visible la navegación
+    opacity: 1; // Establece la opacidad total
+    height: auto;
+}

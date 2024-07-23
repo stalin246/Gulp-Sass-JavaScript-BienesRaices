@@ -1,0 +1,47 @@
+// Archivo _darkMode.scss: Estilos específicos para el modo oscuro del proyecto de Bienes Raíces
+
+.dark-mode {
+    background-color: darken($grisOscuro, 10); // Oscurece el color de fondo gris oscuro
+
+    p {
+        color: $blanco; // Cambia el color del texto de los párrafos a blanco
+    }
+
+    a, h1, h2, h3, h4 {
+        color: $gris; // Cambia el color de los enlaces y encabezados a gris
+    }
+
+    .anuncio,
+    .resumen-propiedad {
+        background-color: $grisOscuro; // Cambia el color de fondo de los anuncios y resumen de propiedad a gris oscuro
+        border: 1px solid $grisOscuro; // Establece un borde sólido de color gris oscuro
+
+        .precio {
+            color: $verde; // Cambia el color del precio a verde
+        }
+
+        .icono {
+            filter: invert(100%); // Invierte los colores de los iconos
+        }
+    }
+
+    .texto-nosotros blockquote {
+        color: $blanco; // Cambia el color de las citas en la sección "Nosotros" a blanco
+    }
+
+    .formulario {
+        label,
+        legend,
+        p {
+            color: $gris; // Cambia el color de los labels, legendas y párrafos a gris
+        }
+
+        input:not([type="submit"]),
+        select,
+        textarea {
+            background-color: $grisOscuro; // Cambia el color de fondo de los inputs, selects y textareas a gris oscuro
+            border: 1px solid $grisOscuro; // Establece un borde sólido de color gris oscuro
+            color: $blanco; // Cambia el color del texto de los inputs, selects y textareas a blanco
+        }
+    }
+}

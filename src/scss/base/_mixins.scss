@@ -1,0 +1,50 @@
+// Archivo _mixins.scss: Contiene mixins reutilizables para el proyecto de Bienes Raíces
+
+/** Media Queries **/
+
+// Mixin para aplicar estilos en dispositivos móviles (teléfonos)
+@mixin telefono {
+    @media (min-width: #{$telefono}) { // Aplica estilos a partir del ancho mínimo definido en $telefono
+        @content; // Inserta el contenido del mixin aquí
+    }
+}
+
+// Mixin para aplicar estilos en dispositivos tablet
+@mixin tablet {
+    @media (min-width: #{$tablet}) { // Aplica estilos a partir del ancho mínimo definido en $tablet
+        @content; // Inserta el contenido del mixin aquí
+    }
+}
+
+// Mixin para aplicar estilos en dispositivos de escritorio (desktop)
+@mixin desktop {
+    @media (min-width: #{$desktop}) { // Aplica estilos a partir del ancho mínimo definido en $desktop
+        @content; // Inserta el contenido del mixin aquí
+    }
+}
+
+// Mixin para crear una cuadrícula (grid layout)
+@mixin grid($columnas, $espaciado) {
+    display: grid; // Establece el contenedor como una cuadrícula
+    gap: $espaciado; // Define el espaciado entre los elementos de la cuadrícula
+    grid-template-columns: repeat($columnas, 1fr); // Define el número de columnas de igual ancho
+}
+
+// Mixin para estilizar botones
+@mixin boton($bgColor, $display) {
+    background-color: $bgColor; // Color de fondo del botón
+    color: $blanco; // Color del texto del botón
+    font-weight: $bold; // Peso de la fuente del botón
+    text-decoration: none; // Elimina la decoración del texto (subrayado)
+    padding: 1rem 3rem; // Padding interno del botón
+    text-align: center; // Alinea el texto del botón al centro
+    margin-top: $separacion / 2; // Margen superior del botón
+    display: $display; // Tipo de display del botón (block o inline-block)
+    border: none;
+   
+
+    &:hover {
+        background-color: darken($bgColor, 5); // Oscurece el color de fondo del botón al pasar el cursor
+        cursor: pointer;
+    }
+}

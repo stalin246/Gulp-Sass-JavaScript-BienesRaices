@@ -1,0 +1,26 @@
+// Archivo app.scss: Archivo principal de estilos que importa todos los módulos SCSS necesarios
+
+// Importación de archivos base
+@import 'base/normalize'; // Normaliza los estilos CSS por defecto para mayor consistencia entre navegadores
+@import 'base/variables'; // Variables SCSS reutilizables definidas para el proyecto
+@import 'base/mixins'; // Mixins reutilizables definidos para el proyecto
+@import 'base/globales'; // Estilos globales aplicados a todo el proyecto
+@import 'base/utilidades'; // Clases utilitarias para usos comunes
+@import 'base/botones'; 
+@import 'base/darkMode'; 
+
+// Importación de componentes de la interfaz de usuario (UI)
+@import 'layout/header'; // Estilos específicos para el encabezado
+@import 'layout/footer'; // Estilos específicos para el pie de página
+@import 'layout/navegacion'; // Estilos específicos para la barra de navegación
+@import 'layout/iconos'; 
+@import 'layout/anuncios'; 
+@import 'layout/contactar'; 
+@import 'layout/inferior'; 
+@import 'layout/testimoniales'; 
+@import 'layout/formularios'; 
+
+
+// Paginas internas
+@import 'internas/nosotros';
+

@@ -1,0 +1,59 @@
+// Archivo _inferior.scss: Estilos específicos para la sección inferior del proyecto de Bienes Raíces
+
+// Estilos para dispositivos tablet
+@include tablet {
+    .seccion-inferior {
+        display: grid; // Utiliza CSS Grid para la disposición de elementos
+        grid-template-columns: 2fr 1fr; // Define una cuadrícula de 2 columnas: la primera toma 2 fracciones del espacio, la segunda 1 fracción
+        column-gap: 2rem; // Espacio entre columnas de 2rem
+    }
+}
+
+.entrada-blog {
+    margin-bottom: 2rem; // Margen inferior de 2rem para cada entrada de blog
+
+    @include tablet {
+        display: grid; // Utiliza CSS Grid para la disposición de elementos en dispositivos tablet
+        grid-template-columns: 1fr 2fr; // Define una cuadrícula de 2 columnas: la primera toma 1 fracción del espacio, la segunda 2 fracciones
+        column-gap: 2rem; // Espacio entre columnas de 2rem
+    }
+
+    &:last-of-type {
+        margin-bottom: 0; // Elimina el margen inferior de la última entrada de blog
+    }
+}
+
+.informacion-meta {
+    
+    span {
+        color: $amarillo; // Color del texto amarillo
+    }
+    
+}
+
+.texto-entrada {
+    a {
+        color: $negro; // Color del enlace
+        margin-top: 2rem; // Margen superior de 2rem
+        display: block; // El enlace se muestra como un bloque
+
+        @include tablet {
+            margin-top: 0; // Elimina el margen superior en dispositivos tablet
+        }
+    }
+
+    h4 {
+        margin: 0; // Elimina el margen
+        line-height: 1.4; // Altura de línea de 1.4
+
+        &::after {
+            content: ""; // Contenido vacío para el pseudo-elemento
+            display: block; // Se muestra como un bloque
+            width: 15rem; // Ancho de 15rem
+            height: 0.5rem; // Altura de 0.5rem
+            background-color: $verde; // Color de fondo verde
+            margin-top: 1rem; // Margen superior de 1rem
+        }
+    }
+
+}

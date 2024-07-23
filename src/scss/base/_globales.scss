@@ -1,0 +1,66 @@
+// Estilos globales para el proyecto de Bienes Raíces
+
+// Estilos aplicados al elemento HTML
+html {
+    font-size: 62.5%; // Ajusta la base de font-size a 10px para facilitar el uso de rem
+    box-sizing: border-box; // Incluye el padding y el borde en el tamaño total del elemento
+}
+
+// Aplicación de box-sizing a todos los elementos y sus pseudo-elementos
+*, *:before, *:after {
+    box-sizing: inherit; // Hereda el box-sizing definido en el html
+}
+
+// Estilos aplicados al body
+body {
+    font-family: $fuente_principal; // Utiliza la fuente principal definida en variables
+    font-size: 1.6rem; // Tamaño de fuente base
+    line-height: 1.8; // Altura de línea para mejorar la legibilidad
+}
+
+// Estilos aplicados a los párrafos
+p {
+    color: $negro; // Color del texto, definido en variables
+    font-size: 2rem; // Tamaño de fuente de los párrafos
+}
+
+// Estilos para contenedores
+.contenedor {
+    width: 95%; // Ancho del contenedor
+    max-width: 120rem; // Ancho máximo del contenedor
+    margin: 0 auto; // Centra el contenedor horizontalmente
+}
+
+// Estilos aplicados a los enlaces
+a {
+    text-decoration: none; // Elimina el subrayado de los enlaces
+}
+
+// Estilos aplicados a las imágenes y elementos picture
+img,
+picture {
+    width: 100%; // Hace que las imágenes ocupen el 100% de su contenedor
+    display: block; // Elimina el espacio inferior del elemento inline
+}
+
+// Estilos aplicados a los encabezados
+h1, h2, h3 {
+    font-family: $fuente_principal; // Utiliza la fuente principal definida en variables
+    margin: calc($separacion / 2) 0; // Espaciado vertical definido en variables
+    font-weight: 300; // Peso de la fuente
+    text-align: center; // Centra el texto
+}
+
+// Tamaños específicos para cada nivel de encabezado
+h1 {
+    font-size: 3.8rem; // Tamaño de fuente para h1
+}
+h2 {
+    font-size: 3.4rem; // Tamaño de fuente para h2
+}
+h3 {
+    font-size: 3rem; // Tamaño de fuente para h3
+}
+h4 {
+    font-size: 2.6rem; // Tamaño de fuente para h4
+}

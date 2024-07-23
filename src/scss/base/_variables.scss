@@ -1,0 +1,29 @@
+// Archivo _variables.scss: Define variables reutilizables para el proyecto de Bienes Raíces
+
+// Importación de fuentes de Google Fonts
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700,900');
+
+// Fuentes
+$fuente_principal: 'Lato', sans-serif; // Fuente principal utilizada en el proyecto
+
+// Tamaños de Media Queries
+$telefono: 480px; // Ancho mínimo para dispositivos móviles (teléfonos)
+$tablet: 768px; // Ancho mínimo para dispositivos tablet
+$desktop: 1024px; // Ancho mínimo para dispositivos de escritorio (desktop)
+
+// Colores
+$negro: #000000; // Color negro
+$amarillo: #E08709; // Color amarillo
+$verde: #71B100; // Color verde
+$blanco: #FFFFFF; // Color blanco
+$gris: #e1e1e1; // Color gris claro
+$grisOscuro: #333333; // Color gris oscuro
+
+// Espaciado
+$separacion: 5rem; // Valor estándar de separación utilizado en márgenes y paddings
+
+// Pesos de fuente
+$delgada: 300; // Peso de fuente delgada
+$regular : 400; // Peso de fuente regular
+$bold: 700; // Peso de fuente bold
+$black: 900; // Peso de fuente black

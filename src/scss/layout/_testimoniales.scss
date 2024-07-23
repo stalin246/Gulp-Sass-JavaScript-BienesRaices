@@ -1,0 +1,30 @@
+// Archivo _testimoniales.scss: Estilos específicos para la sección de testimoniales del proyecto de Bienes Raíces
+
+.testimonial {
+    background-color: $verde; // Color de fondo del testimonial
+    font-size: 2.4rem; // Tamaño de la fuente del testimonial
+    padding: 2rem; // Padding interno del testimonial
+    color: $blanco; // Color del texto del testimonial
+    border-radius: 2rem; // Bordes redondeados del testimonial
+
+    blockquote {
+        padding-left: 5rem; // Padding izquierdo del blockquote
+        position: relative; // Posicionamiento relativo para incluir pseudo-elementos
+
+        &::before {
+            content: ""; // Contenido vacío para el pseudo-elemento
+            background-image: url(../img/comilla.svg); // Imagen de fondo para el pseudo-elemento
+            background-repeat: no-repeat; // Evita la repetición de la imagen de fondo
+            width: 6rem; // Ancho del pseudo-elemento
+            height: 8rem; // Altura del pseudo-elemento
+            display: block; // El pseudo-elemento se muestra como un bloque
+            position: absolute; // Posicionamiento absoluto del pseudo-elemento
+            left: -2rem; // Desplazamiento hacia la izquierda del pseudo-elemento
+        }
+    }
+
+    p {
+        text-align: right; // Alineación del texto a la derecha
+        color: $blanco; // Color del texto del párrafo
+    }
+}

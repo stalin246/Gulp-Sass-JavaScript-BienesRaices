@@ -1,0 +1,21 @@
+// Archivo _footer.scss: Estilos específicos para el pie de página del proyecto de Bienes Raíces
+
+.footer {
+    padding: $separacion / 2 0; // Padding superior e inferior del footer, basado en la variable $separacion
+    background-color: $grisOscuro; // Color de fondo del footer, definido en variables
+    margin-bottom: 0;
+
+    .contenedor-footer {
+        padding-top: $separacion / 2; // Padding superior del contenedor dentro del footer
+    }
+    .navegacion {
+        visibility: visible;
+        opacity: 1;
+        height: auto;
+    }
+
+    .copyright {
+        color: $blanco; // Color del texto de copyright
+        text-align: center; // Alineación centrada del texto
+    }
+}
